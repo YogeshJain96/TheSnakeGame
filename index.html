@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Responsive Snake Game using Javascript/Jquery"
+    />
+    <meta name="author" content="Yogesh Jain" />
+    <meta name="generator" content="Jekyll v3.8.6" />
+    <title>TheSnakeGame &mdash; Responsive</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/cover.css" rel="stylesheet" />
+    <meta name="theme-color" content="#563d7c" />
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet" />
+    <script src="engine.js"></script>
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">TheSnakeGame</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover container">
+        <!-- <h1 class="cover-heading">The Snake Game</h1> -->
+        <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                      <p class="lead">
+                          <a href="#" id="StartBtn" class="btn btn-lg btn-secondary" onclick="StartGame();"> Start Playing </a>
+                        </p>
+                  </div>
+                  <div class="col" id="StageDiv" style="width: 100%;">  
+                      <canvas id="stage" height="200" style="width: 100%; border: 5px dashed white;"></canvas>
+                    </div>
+              </div>
+       
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>
+            TheSnakeGame</a> &mdash; by
+            <a href="#">@Ontrooo</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.getElementById("StageDiv").style.display="none";
+        function StartGame() {
+          document.getElementById("StartBtn").style.display="none";
+          var x = document.getElementById("StageDiv");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } 
+
+        }
+     </script>
+        
+
+  </body>
+</html>
